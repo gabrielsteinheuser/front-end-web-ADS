@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Recrutamento Online</title>
+    <link rel= "stylesheet" href="style.css">
+</head>
+    <body>
+        <header>
+            <h1>Horarios para aluguel de quadra:</h1>
+        </header>
+        <main> 
+            <selection>
+                <h2>Os melhores horários e datas para você vir jogar em nosso espaço</h2>
+                <form action="https://postman-echo.com/post" method="post" enctype="multipart/form-data">
+                    <p>Preencha o formulário para que possamos disponibilizar os horários disponíveis!</p>
+                    
+                    <fieldset>
+                        <legend>Dados Pessoais</legend>
+                        <div>
+                            <label for="nome_id">Nome completo</label>
+                            <input id="nome_id" name="nome" type="text" placeholder="Digite seu nome completo">
+                        </div>
+                        <hr>
+                        <div>
+                            <label for="telefone_id">Telefone:</label>
+                            <input id="telefone_id" name="telefone" type="tel" required pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}" placeholder="99-99999-9999">
+                        </div>
+                        <hr>
+                        <div>
+                            <label for="email_id">Email para contato:</label>
+                            <input id="email_id" name="email" type="email" placeholder="xxxxxxxxxx@gmail.com">
+                        </div>
+                        <hr>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Quadras</legend>
+                            <table>
+                                <tr>
+                                    <th>Quadras</th>
+                                    <th>Horário</th>
+                                </tr>
+                                <tr>
+                                    <td>Areia Beach Tênis</td>
+                                    <td>09:00 as 11:00</td>
+                                </tr>   
+                                <tr>
+                                    <td>Areia Vôlei</td>
+                                    <td>09:00 as 12:00</td>
+                                </tr>
+                            </table>
+                        <hr>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Dúvidas e solicitações</legend>
+                        <div>
+                            <center><label for="resumo_id">Tem alguma solicitação em específico? Alguma dúvida? Estamos a sua disposição para esclarecer quaisquer dúvidas?</label></center>
+                            <textarea id="resumo_id" 
+                                      name="resumo" 
+                                      rows="10" 
+                                      cols="50"
+                            ></textarea>  
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Horários pretendidos</legend>
+                        <div>
+                            <input id="horario_1" name="nivel" type="radio" value="horario_1">
+                            <label for="horario_1">09:00 as 11:00</label>
+                        </div>
+                        <div>
+                            <input id="horario_2" name="nivel" type="radio" value="horario_2">
+                            <label for="horario_2">09:00 as 12:00</label>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Você pretende jogar quais esportes?</legend>
+                        <div>
+                            <input id="tec_html_id" name="Vôlei de Areia" type="checkbox" value="html">
+                            <label for="tec_html_id">Vôlei de Areia</label>
+                        </div>
+                        <div>
+                            <input id="tec_css_id" name="Tênis" type="checkbox" value="css">
+                            <label for="tec_css_id">Beach Tênis</label>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Grau de instrução</legend>
+                        <div>
+                            <label for="escolaridade_id">Qual seu nível de habilidade:</label>
+                            <select id="escolaridade_id" name="escolaridade">
+                                <option value="medio">Iniciante</option>
+                                <option value="graduacao">Intermediário</option>
+                                <option value="pos">Avançado</option>
+                            </select>
+                        </div>
+                    </fieldset>
+                    <div>
+                    <hr>
+                    <center>
+                        <button id="limpar_dados" type="reset">Limpar dados</button>
+                        <button id="enviar" type="submit">Agendar horário</button>
+                    </center>
+                    </div>
+                </form>
+            </selection>
+        </main>
+        <footer>
+        <center>    <p>Todos os direitos reservados!</p>    </center>
+        </footer>
+    </body>
+</html>
