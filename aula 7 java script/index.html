@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/global.css">
+    <script src="./scripts/index.js" defer></script>
+
+    <title>Formulário JS</title>
+</head>
+<body>
+    <header>
+        <h1>Formulário super simples</h1>
+    </header>
+
+    <main>
+        <h2>Cadastro</h2>
+        <form id="cadastro">
+            <label for="nome">Nome*</label>
+            <input type="text" id="nome">
+            <span id="erro-nome" class="oculto"></span>
+            
+            <label for="idade">Idade*</label>
+            <input type="text" id="idade">
+            <span id="erro-idade" class="oculto"></span>
+
+            <label for="email">Email*</label>
+            <input type="text" id="email">
+            <span id="erro-email" class="oculto"></span>
+
+            <label>
+                <input type="checkbox" id="termos">
+                <span>Li e aceito os termos</span>
+                <span id="erros-termos" class="oculto"></span>
+            </label>
+
+            <button onclick="executar(event)">Enviar</button>
+            <p id="concluido" class="oculto"></p>
+
+    </main>
+
+    <footer>
+        <p>Projeto para conhecermos o JavaScript</p>
+    </footer>
+</body>
+</html>
